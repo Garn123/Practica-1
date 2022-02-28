@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.info h2 {
+    font-size: $h2;
+    color: $paragraph;
+}
+.info p {
+    color: $paragraph;
+    b {
+        color: $secondary;
+    }
+    a {
+        color: aqua;
+    }
+}

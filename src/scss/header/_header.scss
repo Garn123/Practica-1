@@ -1,0 +1,30 @@
+* {
+  background-color: $main;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: $main;
+  position: sticky;
+}
+.logo{
+  display: flex;
+    &__img {
+      display: none;
+        @include tablet{
+          display: flex;
+          height: 70px;
+        }
+    }
+    &__h1 {
+      font-family: 'Dancing Script', cursive;
+        font-size: 27px;
+        color: $paragraph;
+        letter-spacing: -1px;
+        margin: 5px;
+        @include tablet {
+          font-size: 45px;
+        }
+    }
+}

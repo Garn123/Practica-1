@@ -1,0 +1,32 @@
+.gallery {
+    margin-bottom: $margin-bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+     .gallery__container {
+         max-width: 600px;
+         margin: 10px;
+         transform: scale(100%);
+         img {
+             max-width: 100%;
+             object-fit: cover;
+             cursor: pointer;
+         }
+     }
+}
+
+.gallery__h1 {
+    display: flex;
+    justify-content: center;
+    color: $secondary;
+    font-size: $h1;
+    margin: 20px;
+        @include tablet {
+            font-size: $h1-tablet-desktop;
+        }
+}
